@@ -40,3 +40,46 @@ avatar:
     enable: true
     emoji: 🦜
     message: 象征界
+
+pages:
+  - name: 我的小伙伴们
+    url: /links/
+    icon: ri:genderless-line
+    color: dodgerblue
+
+# 社交图标
+social:
+  - name: GitHub
+    link: https://github.com/FZ688
+    icon: ri:github-line
+    color: '#181717' 
+
+# 页脚
+footer:
+  since: 2025 # 起始年份
+  # icon:
+  #   name: ri:cloud-line
+  #   animated: true
+  #   color: '#0078E7'
+  #   url: 你的链接
+  #   title: 自拟
+  powered:
+    enable: true # 是否显示主题名称
+  # beian:
+  #   enable: true # 是否显示备案
+  #   # ICP备案
+  #   icp: 苏ICP备xxxxxxxxxx号
+  #   # 公安备案
+  #   gongan:
+  #     enable: true
+  #     text: 苏公网安备XXXXXXXX号
+  #     id: XXXXXXXX
+ 
+  live_time: # 运行时间
+    enable: true
+    prefix: 感谢陪伴
+    suffix: (●'◡'●)
+    start_time: '2025-09-24T00:00:00' # 开始时间
+ 
+#下面是自定义文本，你可以自由填写
+#custom_text: YourText <a href="yourLink" rel="noopener" target="_blank">Description</a>
