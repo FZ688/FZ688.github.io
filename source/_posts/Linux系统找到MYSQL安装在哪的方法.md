@@ -3,11 +3,12 @@ abbrlink: ''
 categories:
 - - 工作记录
 date: '2025-09-24T14:45:11.643357+08:00'
+excerpt: title: Linux系统查找MySQL安装路径 author: FZ688 readmore: true 为什么我要知道MYSQL安装在哪？ 最近公司给了台堡垒机服务器，我需要去连接服务器查看MySQL数据库表。因为这个堡垒机只能通过浏览器的远程vpn访问，ssh连接工具都无法使用，只能用它那个浏览器界面了去服务器找Mysql安装在哪才能连接到数据库😢。 1. whereis / where...
 tags:
 - Linux
 - MySQL
 title: Linux系统找到MYSQL安装路径
-updated: '2025-09-24T14:45:47.766+08:00'
+updated: '2025-09-24T15:06:19.277+08:00'
 ---
 ---
 title: Linux系统查找MySQL安装路径
