@@ -1,11 +1,5 @@
 favicon: /favicon.ico
-title: FZ's Blog
-subtitle: '无意识'
-description: '大他者并不存在'
-keywords: 编程
-author: FZ
-language: zh-CN
-timezone: ''
+
 
 # 首页标语
 banner:
@@ -44,5 +38,5 @@ avatar:
   mickey_mouse: false
   status:
     enable: true
-    emoji: 🦚
+    emoji: 🦜
     message: 象征界

@@ -102,3 +102,12 @@ theme: yun
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+# Site
+title: FZ's Blog
+subtitle: '无意识'
+description: '大他者并不存在'
+keywords: 编程
+author: FZ
+language: zh-CN
+timezone: ''  
