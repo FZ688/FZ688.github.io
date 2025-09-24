@@ -3,13 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
-timezone: ''
+title: FZ's Blog
+subtitle: '无意识'
+description: '大他者并不存在'
+keywords: 编程
+author: FZ
+language: zh-CN
+timezone: '' 
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -101,13 +101,4 @@ theme: yun
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
-
-# Site
-title: FZ's Blog
-subtitle: '无意识'
-description: '大他者并不存在'
-keywords: 编程
-author: FZ
-language: zh-CN
-timezone: ''  
+  type: '' 
