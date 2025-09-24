@@ -3,7 +3,7 @@ abbrlink: ''
 categories:
 - - 工作记录
 date: '2025-09-24T14:45:11.643357+08:00'
-excerpt: '在Linux服务器上找不到MySQL安装路径？本文记录了如何通过`whereis`、`which`、`find`等命令一步步排查，最终发现MySQL是通过Docker容器部署的排查过程和经验总结。'
+excerpt: '为什么么我要知道MYSQL安装在哪？最近公司给了台堡垒机服务器，我需要去连接服务器查看MySQL数据库表。因为这个堡垒机只能通过浏览器的远程vpn访问，ssh连接工具都无法使用，只能用它那个浏览器界面了去服务器找Mysql安装在哪才能连接到数据库据库😢。1.whereis/where...'
 tags:
 - Linux
 - MySQL
