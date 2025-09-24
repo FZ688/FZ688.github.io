@@ -128,3 +128,7 @@ say:
   api: /data/sentences.json
   hitokoto:
     enable: false
+
+    
+wordcloud:
+  enable: true
