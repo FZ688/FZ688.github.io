@@ -1,4 +1,9 @@
-# About 
+---
+title: About
+date: 2025-09-24 13:35
+author: FZ688
+readmore: true
+---
 
 👋 Hi, I’m @FZ688
 👀 I’m interested in development
