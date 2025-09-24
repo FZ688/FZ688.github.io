@@ -7,19 +7,16 @@ excerpt: title: Linux系统查找MySQL安装路径 author: FZ688 readmore: 
 tags:
 - Linux
 - MySQL
-title: Linux系统找到MYSQL安装路径
-updated: '2025-09-24T15:06:19.277+08:00'
----
----
-title: Linux系统查找MySQL安装路径
+title: Linux系统查找MYSQL安装路径
 author: FZ688
+updated: '2025-09-24T15:06:19.277+08:00'
 readmore: true
 ---
-## 为什么我要知道MYSQL安装在哪？
+**为什么我要知道MYSQL安装在哪？**
 
 最近公司给了台堡垒机服务器，我需要去连接服务器查看MySQL数据库表。因为这个堡垒机只能通过浏览器的远程vpn访问，ssh连接工具都无法使用，只能用它那个浏览器界面了去服务器找Mysql安装在哪才能连接到数据库😢。
 
-## 1. whereis / where/ which
+## whereis / where/ which 命令
 
 whereis命令可以搜索指定的文件名，并返回其所在的位置。我们可以使用whereis命令查找MySQL服务的位置。
 
@@ -35,7 +32,7 @@ which mysql
 
 很遗憾，通过这些命令呢，还是找不到MySQL安装路径。
 
-## 2.find命令
+## find命令
 
 既然上面3个命令都无法成功，那只能用最暴力的方式了。
 
