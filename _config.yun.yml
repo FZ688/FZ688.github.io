@@ -129,3 +129,6 @@ say:
   api: /data/sentences.json
   hitokoto:
     enable: false
+
+wordcount:
+  enable: true
