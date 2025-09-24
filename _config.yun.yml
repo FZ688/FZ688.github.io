@@ -1,0 +1,48 @@
+favicon: /favicon.ico
+title: FZ's Blog
+subtitle: '无意识'
+description: '大他者并不存在'
+keywords: 编程
+author: FZ
+language: zh-CN
+timezone: ''
+
+# 首页标语
+banner:
+  enable: true
+  title: 大他者并不存在
+  border: true
+  cloud:
+    enable: true
+    color: white
+  go_down:
+    enable: true
+    icon: ri:arrow-down-s-line
+
+# 公告，显示在所有文章卡片的最上方，标语的下方
+notice:
+  enable: true
+  content: 欢迎光临我的博客
+
+# 背景
+bg_image:
+  enable: true
+  url: /images/background.jpg
+  # dark:
+  blur: 10px # 设置背景模糊程度
+  opacity: 0.6  
+
+# 点击图片，放大预览
+medium_zoom: true  
+
+# 头像设置
+avatar:
+  enable: true
+  url: /images/avatar.png
+  rounded: true  # 头像是否圆角
+  opacity: 1     # 头像透明度
+  mickey_mouse: false
+  status:
+    enable: true
+    emoji: 🦚
+    message: 象征界
