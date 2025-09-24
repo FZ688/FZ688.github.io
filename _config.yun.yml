@@ -83,3 +83,23 @@ footer:
  
 #下面是自定义文本，你可以自由填写
 #custom_text: YourText <a href="yourLink" rel="noopener" target="_blank">Description</a>
+
+# 取消打赏
+reward:
+  enable: false
+  #icon: ri:hand-coin-line
+  #comment: 夜梦星尘这么可爱，你真的不考虑考虑嘛？
+  #methods:
+    # - name: 支付宝
+    #   path: https://cdn.yunyoujun.cn/img/donate/alipay-qrcode.jpg
+    #   color: '#00A3EE'
+    #   icon: ri:alipay-line
+    #   link: https://xxxx
+    # - name: QQ 支付
+    #   path: 你的QQ收款码
+    #   color: '#12B7F5'
+    #   icon: ri:qq-line
+    # - name: 微信支付
+    #   path: 你的微信收款码
+    #   color: '#2DC100'
+    #   icon: ri:wechat-pay-line
