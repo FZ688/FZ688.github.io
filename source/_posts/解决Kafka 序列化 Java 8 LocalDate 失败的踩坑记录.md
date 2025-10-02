@@ -14,7 +14,7 @@ excerpt: '记录kafka生产者发送对象消息测试时遇到的一个问题�
 ---
 记录kafka生产者发送对象消息测试时遇到的一个问题，对象中的属性有Java8的`java.time`类型，导致Json序列化无法成功！
 下面是示例:
-
+## 示例代码
 ```java
 @Data
 @AllArgsConstructor
@@ -60,6 +60,7 @@ void test() {
 }
 ```
 
+## 问题分析
 测试完发现报错信息如下：
 
 可以看到最重要的一句话
@@ -72,6 +73,7 @@ void test() {
 
 ![image-20251002170039813](https://8b63a20.webp.li/2025-10-02-1759395640158.png)
 
+## 解决方案
 问题的核心在于`java.time.LocalDateTime`类型在`Jackson`默认序列化器中不被支持。为了解决这个问题，需要引入`Jackson`的`jackson-datatype-jsr310` 模块，并将其注册到 ObjectMapper 中。
 
 在对应的pom.xml中添加以下依赖：
