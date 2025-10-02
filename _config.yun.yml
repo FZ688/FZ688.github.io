@@ -132,3 +132,7 @@ say:
     
 wordcloud:
   enable: true
+
+# 开启代码一键复制按钮
+codeblock:
+  copy_btn: true  
