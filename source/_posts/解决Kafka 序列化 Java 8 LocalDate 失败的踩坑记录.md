@@ -8,6 +8,9 @@ tags:
 - Java
 title: 解决Kafka 序列化 Java 8 LocalDate 失败的踩坑记录
 updated: '2025-10-02T17:18:40.889+08:00'
+readmore: true
+author: FZ688
+excerpt: '记录kafka生产者发送对象消息测试时遇到的一个问题，对象中的属性有Java8的`java.time`类型，导致Json序列化无法成功！ 下面是示例: ```java @Data @AllArgsConstructor @NoArgsConstructor @Builder public class User implements Serializable { private int id; private String name; private String phone; private LocalDate birthday; } ``` ```java @Component public class EventProducer { @Resource private KafkaTemplate<String, Object> kafkaTemplate; public void sendEvent() { User user = User.builder() .id(2) .name("里斯") ...'
 ---
 记录kafka生产者发送对象消息测试时遇到的一个问题，对象中的属性有Java8的`java.time`类型，导致Json序列化无法成功！
 下面是示例:
