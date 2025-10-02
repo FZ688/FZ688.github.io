@@ -40,19 +40,18 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: falsehigh
 relative_link: false
 future: true
 syntax_highlighter: highlight.js
+# 关闭 highlight
 highlight:
-  line_number: true
-  auto_detect: false
-  tab_replace: ''
-  wrap: true
-  hljs: false
+  enable: false
+# 启用 prism
 prismjs:
+  enable: true
   preprocess: true
-  line_number: true
+  line_number: false
   tab_replace: ''
 
 # Home page setting
@@ -103,12 +102,3 @@ theme: yun
 deploy:
   type: '' 
 
-# 关闭 highlight
-highlight:
-  enable: false
-# 启用 prism
-prismjs:
-  enable: true
-  preprocess: true
-  line_number: false
-  tab_replace: ''
