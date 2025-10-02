@@ -136,3 +136,17 @@ wordcloud:
 # 开启代码一键复制按钮
 codeblock:
   copy_btn: true  
+
+comment:
+  enable: true
+  tips:
+    - 若您想及时得到回复提醒，建议跳转 GitHub Issues 评论。
+    - 若没有本文 Issue，您可以使用 Comment 模版新建。
+  candidates:
+    - twikoo
+
+twikoo:
+  enable: true
+  envId:  https://t-vercel-blond.vercel.app/ # 环境id
+  region: # 环境地域，默认为 ap-shanghai，如果您的环境地域不是上海，需传此参数
+  option: # 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数    
