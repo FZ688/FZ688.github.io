@@ -172,4 +172,12 @@ post_meta:
   created_at: true
   updated_at: true
   categories: true
-  tags: true    
+  tags: true
+
+engine_search:
+  enable: false
+
+# search
+# https://github.com/next-theme/hexo-generator-searchdb
+local_search:
+  enable: true
