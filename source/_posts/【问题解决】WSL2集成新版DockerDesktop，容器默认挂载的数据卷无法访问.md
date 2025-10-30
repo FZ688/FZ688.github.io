@@ -48,7 +48,7 @@ excerpt: ' 我在 WSL2上使用Docker Desktop运行 Docker。以docker部署elas
 - 对于 Docker 版本 20.10.+： `\\wsl$\docker-desktop-data\data\docker\volumes`
 - 对于 Docker 引擎 v19.03： `\\wsl$\docker-desktop-data\version-pack-data\community\docker\volumes\`
 
-每个卷都有一个目录。
+每个卷都有一个目录。然而这是旧版本的方法，对我来说并不适用，因为我使用的是 Docker Desktop 4.49.0 版本。
 
 ### 新版本的Docker Desktop解决方式
 
