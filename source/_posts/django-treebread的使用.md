@@ -8,9 +8,9 @@ tags:
 - Python
 - Django
 title: django-treebred结合drf使用
-updated: '2026-04-28T23:03:11.126+08:00'
+updated: '2026-04-28T23:08:34.288+08:00'
 ---
-# 1.安装
+# 安装
 
 安装依赖
 
@@ -20,7 +20,7 @@ uv add django-treebeard
 
 将 `treebeard` 添加到 `INSTALLED_APPS`
 
-# 2.快速上手（官方文档）
+# 快速上手（官方文档）
 
 我们来创建一个基础的树形结构模型。本示例将使用**物化路径树（Materialized Path Tree）**实现：
 
@@ -69,7 +69,7 @@ get(node.pk).add_child(name='Server Memory')
 
 ## 本次创建的树形结构
 
-![digraph introduction_digraph { "Computer Hardware"; "Computer Hardware" -> "Hard Drives"; "Computer Hardware" -> "Memory"; "Memory" -> "Desktop Memory"; "Memory" -> "Laptop Memory"; "Memory" -> "Server Memory"; "Computer Hardware" -> "SSD"; }](https://django-treebeard.readthedocs.io/en/latest/_images/graphviz-e818fa506fd6a2e82202c749d03d8636815f3601.png) "Hard Drives"; "Computer Hardware" -> "Memory"; "Memory" -> "Desktop Memory"; "Memory" -> "Laptop Memory"; "Memory" -> "Server Memory"; "Computer Hardware" -> "SSD"; }" />
+![digraph introduction_digraph { "Computer Hardware"; "Computer Hardware" -> "Hard Drives"; "Computer Hardware" -> "Memory"; "Memory" -> "Desktop Memory"; "Memory" -> "Laptop Memory"; "Memory" -> "Server Memory"; "Computer Hardware" -> "SSD"; }](https://django-treebeard.readthedocs.io/en/latest/_images/graphviz-e818fa506fd6a2e82202c749d03d8636815f3601.png) "Hard Drives"; "Computer Hardware" -> "Memory"; "Memory" -> "Desktop Memory"; "Memory" -> "Laptop Memory"; "Memory" -> "Server Memory"; "Computer Hardware" -> "SSD"; }" /> "Hard Drives"; "Computer Hardware" -> "Memory"; "Memory" -> "Desktop Memory"; "Memory" -> "Laptop Memory"; "Memory" -> "Server Memory"; "Computer Hardware" -> "SSD"; }" />
 
 ```dot
 digraph introduction_digraph {
@@ -133,7 +133,7 @@ Category.get_annotated_list_qs(Category.objects.filter(name__icontains='Hardware
 
 ---
 
-# 3.定义model——物化路径树（Materialized Path trees）
+# 定义model——物化路径树（Materialized Path trees）
 
 ---
 
@@ -396,7 +396,7 @@ node_order_by = ['field1', 'field2', 'field3']
 
 自定义查询集类，核心用途：重写删除逻辑，保证树形删除时的数据联动一致性。
 
-# 4.配置 Admin
+# 配置 Admin
 
 ## API 参考
 
@@ -498,6 +498,6 @@ admin.site.register(RelatedModel, RelatedModelAdmin)
 > ⚠️ **警告**
 > `TreeNodeChoiceField` 不可用于邻接表（AL）类型的节点，因为在该场景下，这类节点无法实现高效查询。
 
-# 5.使用优化
+# 使用优化
 
 TODO
