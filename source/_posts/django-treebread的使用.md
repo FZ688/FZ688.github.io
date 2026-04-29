@@ -4,11 +4,14 @@ categories:
 - - 开发
 - - 学习记录
 date: '2026-04-28T23:03:04.548336+08:00'
+excerpt: 'django-treebeard 在做drf后端开发时经常用到，比如我要对部门建立一棵树来进行管理，就可以使用它。django-treebeard 是一款基于 Django 的高性能树形数据结构实现库，支持物化路径树、嵌套集树、邻接表树三种主流树形结构方案。物化路径树是本文讲解的重点。本文将介绍 django-treebeard 的核心原理、使用方法以及在 Django 项目中的应用实践。'
 tags:
 - Python
 - Django
-title: django-treebred结合drf使用
+title: django-treebeard结合drf使用
+author: FZ688
 updated: '2026-04-28T23:08:34.288+08:00'
+readmore: true
 ---
 # 安装
 
