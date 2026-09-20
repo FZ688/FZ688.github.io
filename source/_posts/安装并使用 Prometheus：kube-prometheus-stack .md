@@ -9,7 +9,7 @@ tags:
 - DevOps
 - Prometheus
 - 运维
-title: Kubernetes 集群监控——Prometheus和Grafana
+title: Kubernetes 集群监控体系——Prometheus+Grafana+Alertmanager
 updated: '2026-07-20T19:20:15.756+08:00'
 ---
 ## 架构
