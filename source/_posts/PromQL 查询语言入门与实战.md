@@ -2,6 +2,7 @@
 abbrlink: ''
 categories:
 - - Prometheus
+excerpt: 'PromQL 是 Prometheus 的查询语言，本文从基本概念、数据类型、选择器、聚合运算符、向量匹配、直方图分位数计算、gauge 函数库、缺失数据处理、标签手术与子查询等方面详细介绍了 PromQL 的使用方法，并提供了实战练习。'
 date: '2026-07-20T17:10:41.350526+08:00'
 tags:
 - 云原生
