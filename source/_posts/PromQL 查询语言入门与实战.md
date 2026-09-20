@@ -1,5 +1,5 @@
 ---
-abbrlink: PromQL 查询语言入门与实战
+abbrlink: ''
 categories:
 - - Prometheus
 date: '2026-09-20T17:10:41.350526+08:00'
@@ -8,7 +8,7 @@ tags:
 - DevOps
 - Prometheus
 - 运维
-title: title
+title: PromQL 查询语言入门与实战
 updated: '2026-09-20T17:10:43.052+08:00'
 ---
 ## PromQL 是什么、不是什么
