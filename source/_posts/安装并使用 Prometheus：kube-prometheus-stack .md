@@ -2,7 +2,7 @@
 abbrlink: ''
 categories:
 - - Prometheus
-expert: '上一篇Prometheus 基础知识讲过 Prometheus 的架构：Prometheus 服务器负责采集和存储指标，Alertmanager 负责告警，再加上 Grafana 做可视化——一套能用的监控体系至少是这三件套'
+excerpt: '上一篇Prometheus 基础知识讲过 Prometheus 的架构：Prometheus 服务器负责采集和存储指标，Alertmanager 负责告警，再加上 Grafana 做可视化——一套能用的监控体系至少是这三件套'
 date: '2026-09-19T19:20:14.894205+08:00'
 tags:
 - 云原生
