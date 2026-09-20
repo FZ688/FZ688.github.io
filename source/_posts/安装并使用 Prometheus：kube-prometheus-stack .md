@@ -2,7 +2,7 @@
 abbrlink: ''
 categories:
 - - Prometheus
-expert: '上一篇[《Prometheus 基础知识》](./Prometheus 基础知识.md)讲过 Prometheus 的架构：Prometheus 服务器负责采集和存储指标，Alertmanager 负责告警，再加上 Grafana 做可视化——一套能用的监控体系至少是这三件套'
+expert: '上一篇Prometheus 基础知识讲过 Prometheus 的架构：Prometheus 服务器负责采集和存储指标，Alertmanager 负责告警，再加上 Grafana 做可视化——一套能用的监控体系至少是这三件套'
 date: '2026-09-19T19:20:14.894205+08:00'
 tags:
 - 云原生
@@ -14,7 +14,7 @@ updated: '2026-09-19T19:20:15.756+08:00'
 ---
 ## 架构
 
-上一篇[《Prometheus 基础知识》](./Prometheus 基础知识.md)讲过 Prometheus 的架构：Prometheus 服务器负责采集和存储指标，Alertmanager 负责告警，再加上 Grafana 做可视化——一套能用的监控体系至少是这三件套。
+上一篇[《Prometheus 基础知识》](https://blog.fz688.dpdns.org/2026/09/19/Prometheus-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/)讲过 Prometheus 的架构：Prometheus 服务器负责采集和存储指标，Alertmanager 负责告警，再加上 Grafana 做可视化——一套能用的监控体系至少是这三件套。
 如果我们是在一台 Linux 虚拟机上学习，可以下载官方二进制包，5 分钟跑起一个 Prometheus。但我们的目标是 **Kubernetes 集群监控**：集群里几十个组件（kubelet、API Server、CoreDNS、容器、节点……）都要采集，还要预置几十张仪表盘和上百条告警规则。这时候手动一个个装就不现实了。
 社区最常见的做法是 **kube-prometheus-stack**——一个 Helm Chart，一条命令把整套装齐：
 
