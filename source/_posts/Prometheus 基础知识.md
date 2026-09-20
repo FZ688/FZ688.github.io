@@ -3,14 +3,14 @@ abbrlink: ''
 categories:
 - - Prometheus
 excerpt: 'Prometheus 是一套监控系统兼时间序列数据库，尤其擅长监控动态多变的云环境。它采用维度数据模型，配有强大的查询语言，并将埋点（instrumentation）、指标采集、服务发现、告警等环节整合进同一个生态。'
-date: '2026-09-19T19:20:14.894205+08:00'
+date: '2026-07-19T19:20:14.894205+08:00'
 tags:
 - 云原生
 - DevOps
 - Prometheus
 - 运维
 title: Prometheus 基础知识
-updated: '2026-09-19T19:20:15.756+08:00'
+updated: '2026-07-19T19:20:15.756+08:00'
 ---
 # Prometheus 基础知识
 
