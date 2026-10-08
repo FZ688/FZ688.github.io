@@ -2,21 +2,22 @@
 abbrlink: ''
 categories:
 - - Prometheus
-excerpt: '上一篇Prometheus 基础知识讲过 Prometheus 的架构：Prometheus 服务器负责采集和存储指标，Alertmanager 负责告警，再加上 Grafana 做可视化——一套能用的监控体系至少是这三件套'
 date: '2026-07-20T19:20:14.894205+08:00'
+excerpt: 上一篇Prometheus 基础知识讲过 Prometheus 的架构：Prometheus 服务器负责采集和存储指标，Alertmanager 负责告警，再加上 Grafana 做可视化——一套能用的监控体系至少是这三件套
 tags:
 - 云原生
 - DevOps
 - Prometheus
 - 运维
-title: Kubernetes 集群监控体系——Prometheus+Grafana+Alertmanager
-updated: '2026-07-20T19:20:15.756+08:00'
+title: 03-Kubernetes 集群监控体系——Prometheus+Grafana+Alertmanager
+updated: '2026-10-08T21:38:18.492+08:00'
 ---
 ## 架构
 
 上一篇[《Prometheus 基础知识》](https://blog.fz688.dpdns.org/2026/09/19/Prometheus-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/)讲过 Prometheus 的架构：Prometheus 服务器负责采集和存储指标，Alertmanager 负责告警，再加上 Grafana 做可视化——一套能用的监控体系至少是这三件套。
 如果我们是在一台 Linux 虚拟机上学习，可以下载官方二进制包，5 分钟跑起一个 Prometheus。但我们的目标是 **Kubernetes 集群监控**：集群里几十个组件（kubelet、API Server、CoreDNS、容器、节点……）都要采集，还要预置几十张仪表盘和上百条告警规则。这时候手动一个个装就不现实了。
 社区最常见的做法是 **kube-prometheus-stack**——一个 Helm Chart，一条命令把整套装齐：
+
 
 | 组件                  | 作用                                            | 本次安装的版本   |
 | --------------------- | ----------------------------------------------- | ---------------- |
@@ -185,6 +186,7 @@ $ kubectl get svc -n monitoring
 
 至此安装完成。三个入口：
 
+
 | 服务         | 本机地址               | 登录                 |
 | ------------ | ---------------------- | -------------------- |
 | Prometheus   | http://localhost:30990 | 无需登录             |
@@ -193,7 +195,7 @@ $ kubectl get svc -n monitoring
 
 ## WebUI使用
 
-###  Prometheus：先看它抓取了哪些目标
+### Prometheus：先看它抓取了哪些目标
 
 打开 http://localhost:30990/query ，这是查询首页（Table / Graph / Explain 三个视图）：
 
@@ -241,7 +243,7 @@ Status → Service discovery（`/service-discovery`）：
 - `__meta_kubernetes_pod_name`、`__meta_kubernetes_endpoints_label_app_kubernetes_io_managed_by="Helm"` 这些 `__meta_` 开头的是从 K8s API 发现的元数据；
 - 右上角 `1 / 24`：发现阶段有 24 个候选标签，经过 relabeling（标签重写）筛选后只剩 1 个进入最终抓取——**relabeling 是 ServiceMonitor 的底层机制，后续会讲**，这里先混个眼熟。
 
-###  Grafana：登录与开箱即用的仪表盘
+### Grafana：登录与开箱即用的仪表盘
 
 浏览器打开 http://localhost:30330 ：
 
@@ -334,8 +336,6 @@ Prometheus的配置由 Operator 生成的 Secret 动态渲染。因此：一切�
 ## 小结
 
 本篇从零完成了一套生产级监控栈的部署，并且对它的内部结构进行分析。
-
-
 
 ## 参考资料
 
